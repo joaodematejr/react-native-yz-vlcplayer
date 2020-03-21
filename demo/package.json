@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-yz-vlcplayer": "file:.."
+    "react-native-yz-vlcplayer": "https://github.com/joaodematejr/react-native-yz-vlcplayer.git"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
