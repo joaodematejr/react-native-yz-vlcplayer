@@ -2,10 +2,9 @@ import React from 'react';
 import ReactNative from 'react-native';
 
 const { Component } = React;
-
 import PropTypes from 'prop-types';
 
-const { StyleSheet, requireNativeComponent, NativeModules, View, Platform } = ReactNative;
+const { StyleSheet, requireNativeComponent, View, Platform } = ReactNative;
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
 
 export default class VLCPlayer extends Component {
@@ -34,7 +33,7 @@ export default class VLCPlayer extends Component {
         this._root.setNativeProps(nativeProps);
     }
 
-    clear(){
+    clear() {
         this.setNativeProps({ clear: true });
     }
 
@@ -42,19 +41,19 @@ export default class VLCPlayer extends Component {
         this.setNativeProps({ seek: pos });
     }
 
-    autoAspectRatio(isAuto){
+    autoAspectRatio(isAuto) {
         this.setNativeProps({ autoAspectRatio: isAuto });
     }
 
-    changeVideoAspectRatio(ratio){
+    changeVideoAspectRatio(ratio) {
         this.setNativeProps({ videoAspectRatio: ratio });
     }
 
-    play(paused){
+    play(paused) {
         this.setNativeProps({ paused: paused });
     }
 
-    position(position){
+    position(position) {
         this.setNativeProps({ position: position });
     }
 
@@ -70,13 +69,13 @@ export default class VLCPlayer extends Component {
         this._root = component;
     }
 
-    _onVideoStateChange(event){
+    _onVideoStateChange(event) {
         //
         let type = event.nativeEvent.type;
-        if(__DEV__ && this.props.showLog){
-            console.log(type,event.nativeEvent);
+        if (__DEV__ && this.props.showLog) {
+            console.log(type, event.nativeEvent);
         }
-        switch (type){
+        switch (type) {
             case 'Opening':
                 this.props.onOpen && this.props.onOpen(event.nativeEvent);
                 this.props.onIsPlaying && this.props.onIsPlaying(event.nativeEvent);
@@ -118,7 +117,7 @@ export default class VLCPlayer extends Component {
         }
     }
 
-    _onLoadStart(event){
+    _onLoadStart(event) {
         if (this.props.onLoadStart) {
             this.props.onLoadStart(event.nativeEvent);
         }
@@ -131,13 +130,13 @@ export default class VLCPlayer extends Component {
     }
 
 
-    _onIsPlaying(event){
-        if(this.props.onIsPlaying){
+    _onIsPlaying(event) {
+        if (this.props.onIsPlaying) {
             this.props.onIsPlaying(event.nativeEvent);
         }
     }
 
-    _onSnapshot(event){
+    _onSnapshot(event) {
         if (this.props.onSnapshot) {
             this.props.onSnapshot(event.nativeEvent);
         }
@@ -148,19 +147,19 @@ export default class VLCPlayer extends Component {
         let uri = source.uri || '';
         let isNetwork = !!(uri && uri.match(/^https?:/));
         const isAsset = !!(uri && uri.match(/^(assets-library|file|content|ms-appx|ms-appdata):/));
-        if(!isAsset){
+        if (!isAsset) {
             isNetwork = true;
         }
         if (uri && uri.match(/^\//)) {
             isNetwork = false;
         }
-        if(Platform.OS === 'ios'){
+        if (Platform.OS === 'ios') {
             source.mediaOptions = this.props.mediaOptions || {};
-        }else{
+        } else {
             let mediaOptionsList = [];
             let mediaOptions = this.props.mediaOptions || {};
             let keys = Object.keys(mediaOptions);
-            for(let i=0; i < keys.length - 1; i++){
+            for (let i = 0; i < keys.length - 1; i++) {
                 let optionKey = keys[i];
                 let optionValue = mediaOptions[optionKey];
                 mediaOptionsList.push(optionKey + '=' + optionValue);
@@ -170,13 +169,13 @@ export default class VLCPlayer extends Component {
         source.initOptions = this.props.initOptions || [];
         source.isNetwork = isNetwork;
         source.autoplay = this.props.autoplay;
-        if(!isNaN(this.props.hwDecoderEnabled) && !isNaN(this.props.hwDecoderForced)){
+        if (!isNaN(this.props.hwDecoderEnabled) && !isNaN(this.props.hwDecoderForced)) {
             source.hwDecoderEnabled = this.props.hwDecoderEnabled;
-            source.hwDecoderForced =  this.props.hwDecoderForced;
+            source.hwDecoderForced = this.props.hwDecoderForced;
         }
-        if(this.props.initType){
+        if (this.props.initType) {
             source.initType = this.props.initType;
-        }else{
+        } else {
             source.initType = 1;
         }
 
@@ -212,7 +211,7 @@ VLCPlayer.propTypes = {
      * 0 --- 200
      */
     volume: PropTypes.number,
-    volumeUp:PropTypes.number,
+    volumeUp: PropTypes.number,
     volumeDown: PropTypes.number,
     repeat: PropTypes.bool,
     muted: PropTypes.bool,
@@ -226,11 +225,11 @@ VLCPlayer.propTypes = {
     onSnapshot: PropTypes.func,
     onIsPlaying: PropTypes.func,
     onOpen: PropTypes.func,
-    onLoadStart:PropTypes.func,
+    onLoadStart: PropTypes.func,
 
 
     /* Wrapper component */
-    source: PropTypes.oneOfType([PropTypes.object,PropTypes.number]),
+    source: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
     play: PropTypes.func,
     snapshot: PropTypes.func,
     onError: PropTypes.func,
