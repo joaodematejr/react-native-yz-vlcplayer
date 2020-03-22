@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license        = package_json["license"]
   s.author         = { package_json["author"] => package_json["author"] }
   s.platform       = :ios, "9.0"
-  s.source         = { :git => "https://github.com/joaodematejr/react-native-yz-vlcplayer" } 
+  s.source         = { :git => "https://github.com/joaodematejr/react-native-yz-vlcplayer.git" } 
   s.source_files   = 'ios/RCTVLCPlayer/*.{h,m}'
 
   s.dependency 'React'
