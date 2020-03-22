@@ -2,7 +2,7 @@
  * 高度定义
  * Created by yuanzhou.xu on 17/2/18.
  */
-import { PixelRatio, Dimensions, Platform, StatusBar } from 'react-native';
+import { Dimensions, PixelRatio, Platform, StatusBar } from 'react-native';
 let initialDeviceHeight = 667;
 let initialDeviceWidth = 375;
 let initialPixelRatio = 2;

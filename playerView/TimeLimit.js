@@ -19,7 +19,7 @@ export default class TimeLimt extends Component {
   };
 
   componentDidMount() {
-    if(this.props.maxTime > 0){
+    if (this.props.maxTime > 0) {
       this.timer = setInterval(this._updateTimer, 1000);
     }
   }
@@ -60,7 +60,7 @@ export default class TimeLimt extends Component {
           </View>
         )}
         <View style={styles.nameView}>
-          <Text style={{ fontSize: 13 }}>跳过片头</Text>
+          <Text style={{ fontSize: 13 }}>Pular título</Text>
         </View>
       </TouchableOpacity>
     );

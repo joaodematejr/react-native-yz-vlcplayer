@@ -2,19 +2,9 @@
  * Created by yuanzhou.xu on 2018/5/16.
  */
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  Dimensions,
-  TouchableOpacity,
-  ActivityIndicator,
-  StatusBar,
-} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Slider from 'react-native-slider';
-import PropTypes from 'prop-types';
-import TimeLimt from './TimeLimit';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default class ControlBtn extends Component {
   _getTime = (data = 0) => {
@@ -57,7 +47,7 @@ export default class ControlBtn extends Component {
       style
     } = this.props;
     return (
-      <View style={[styles.controls,style]}>
+      <View style={[styles.controls, style]}>
         <View style={styles.controlContainer}>
           <TouchableOpacity style={styles.controlContent} activeOpacity={1}>
             <View style={styles.controlContent2}>
@@ -69,7 +59,7 @@ export default class ControlBtn extends Component {
                 style={{ width: 50, alignItems: 'center', justifyContent: 'center' }}>
                 <Icon name={paused ? 'play' : 'pause'} size={30} color="#fff" />
               </TouchableOpacity>
-              {showSlider && totalTime > 0 &&(
+              {showSlider && totalTime > 0 && (
                 <View
                   style={{
                     flex: 1,
@@ -77,8 +67,8 @@ export default class ControlBtn extends Component {
                     flexDirection: 'row',
                     //justifyContent: 'space-between',
                   }}>
-                  <View style={{justifyContent:'center',alignItems:'center',height:50, minWidth: 50,}}>
-                    <Text style={{fontSize: 11,color: '#fff',}}>
+                  <View style={{ justifyContent: 'center', alignItems: 'center', height: 50, minWidth: 50, }}>
+                    <Text style={{ fontSize: 11, color: '#fff', }}>
                       {this._getTime(currentTime) || 0}
                     </Text>
                   </View>
@@ -98,9 +88,9 @@ export default class ControlBtn extends Component {
                       }}
                     />
                   </View>
-                  <View style={{justifyContent:'center',alignItems:'center',height:50, minWidth: 50}}>
+                  <View style={{ justifyContent: 'center', alignItems: 'center', height: 50, minWidth: 50 }}>
                     <Text
-                      style={{fontSize: 11,color: '#fff'}}>
+                      style={{ fontSize: 11, color: '#fff' }}>
                       {this._getTime(totalTime) || 0}
                     </Text>
                   </View>
@@ -128,8 +118,8 @@ const styles = StyleSheet.create({
     //backgroundColor: '#000',
   },
   controls: {
-    width:'100%',
-    height:50,
+    width: '100%',
+    height: 50,
   },
   rateControl: {
     flex: 0,
@@ -151,7 +141,7 @@ const styles = StyleSheet.create({
     //lineHeight: 12,
   },
   controlContainer: {
-    flex:1,
+    flex: 1,
     //padding: 5,
     alignItems: 'center',
     justifyContent: 'center',
