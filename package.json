@@ -1,7 +1,8 @@
 {
   "name": "react-native-yz-vlcplayer",
   "version": "1.1.1-beta7",
-  "description": "",
+  "nativePackage": true,
+  "description": "VLC Player for React-Native",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,11 +15,39 @@
     "react-native",
     "mp4"
   ],
-  "author": "yuanzhou.xu",
-  "email": "635043894@qq.com",
+  "peerDependencies": {
+    "react-native": ">=0.60"
+  },
+  "devDependencies": {
+    "react-native-cli": "^2.0.1"
+  },
+  "author": "João Dematé <joaodematejr@gmail.com> (github.com/joaodematejr)",
+  "contributors": [
+    {
+      "name": "João Dematé",
+      "email": "joaodematejr@gmail.com",
+      "url": ""
+    },
+    {
+      "name": "João Dematé",
+      "email": "joaodematejr@gmail.com"
+    }
+  ],
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xuyuanzhou/react-native-yz-vlcplayer.git"
+    "url": "git+https://github.com/joaodematejr/react-native-yz-vlcplayer.git"
   },
-  "license": "MIT"
+  "bugs": {
+    "url": "https://github.com/joaodematejr/react-native-yz-vlcplayer/issues"
+  },
+  "homepage": "https://github.com/joaodematejr/react-native-yz-vlcplayer#readme",
+  "npx": {
+    "android": {
+      "packageInstance": "new ReactVlcPlayerPackage()"
+    },
+    "ios": {
+      "project": "ios/RCTVLCPlayer.xcodeproj"
+    }
+  }
 }
