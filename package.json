@@ -1,7 +1,7 @@
 {
   "name": "react-native-yz-vlcplayer",
-  "version": "5.1.0",
-  "nativePackage": true,
+  "version": "1.1.1-beta7",
+  "nativePackage": false,
   "description": "VLC Player for React-Native",
   "main": "index.js",
   "scripts": {
