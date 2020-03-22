@@ -1,6 +1,6 @@
 {
   "name": "react-native-yz-vlcplayer",
-  "version": "1",
+  "version": "5.1.0",
   "nativePackage": true,
   "description": "VLC Player for React-Native",
   "main": "index.js",
@@ -15,9 +15,7 @@
     "react-native",
     "mp4"
   ],
-  "peerDependencies": {
-    "react-native": ">=0.60"
-  },
+  "dependencies": {},
   "devDependencies": {
     "react-native-cli": "^2.0.1"
   },
