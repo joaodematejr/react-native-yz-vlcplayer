@@ -5424,9 +5424,8 @@ react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
-"react-native-yz-vlcplayer@https://github.com/joaodematejr/react-native-yz-vlcplayer.git":
+"react-native-yz-vlcplayer@file:..":
   version "1.1.1-beta7"
-  resolved "https://github.com/joaodematejr/react-native-yz-vlcplayer.git#2861d31f5d0e6b9cf7ba025bd9e4a65efcfecb5d"
 
 react-native@0.61.5:
   version "0.61.5"

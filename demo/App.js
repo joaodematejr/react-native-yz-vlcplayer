@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, SafeAreaView } from 'react-native';
+import { VLCPlayer, VlCPlayerView } from 'react-native-yz-vlcplayer';
 
 export default function App() {
   return (
