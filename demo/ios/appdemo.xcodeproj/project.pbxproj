@@ -12,14 +12,27 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1F934AE0E80CD13E7AF1FCDD /* libPods-appdemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0E9EFF6F4FFAD2DB9431D2 /* libPods-appdemo.a */; };
 		2404AA8CA0576C7425105122 /* libPods-appdemo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD11CFE4DDDA5E6173DD0CC /* libPods-appdemo-tvOSTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* appdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* appdemoTests.m */; };
 		487BF2B8835878C34147F636 /* libPods-appdemo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF9F3A81ADBA59C8E98EB1F /* libPods-appdemo-tvOS.a */; };
-		F5672CEF3D2C62CF2943E0C2 /* libPods-appdemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB8A5B2156C9934CCDD29A7 /* libPods-appdemoTests.a */; };
+		8E01CF59EB268F80930FC6EA /* Pods_appdemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943526B8D696A11CF98CF522 /* Pods_appdemoTests.framework */; };
+		C71F361767D37ECF2BE56CB4 /* Pods_appdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF28AE84F257527EBAEC77C /* Pods_appdemo.framework */; };
+		CB47293B24285AD20096383B /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47293A24285AD20096383B /* MobileVLCKit.framework */; };
+		CB47293D24285AFF0096383B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47293C24285AFF0096383B /* AudioToolbox.framework */; };
+		CB47293F24285B050096383B /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47293E24285B050096383B /* VideoToolbox.framework */; };
+		CB47294124285B0A0096383B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47294024285B0A0096383B /* CoreMedia.framework */; };
+		CB47294324285B100096383B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47294224285B100096383B /* CoreVideo.framework */; };
+		CB47294524285B150096383B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47294424285B150096383B /* CoreAudio.framework */; };
+		CB47294724285B1C0096383B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47294624285B1C0096383B /* AVFoundation.framework */; };
+		CB47294924285B210096383B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47294824285B210096383B /* MediaPlayer.framework */; };
+		CB47294B24285B2B0096383B /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47294A24285B2B0096383B /* libiconv.2.tbd */; };
+		CB47294D24285B320096383B /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47294C24285B310096383B /* libc++.1.tbd */; };
+		CB47294F24285B370096383B /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47294E24285B370096383B /* libz.1.tbd */; };
+		CB47295124285B3C0096383B /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47295024285B3C0096383B /* libbz2.1.0.tbd */; };
+		CB47295224285B7D0096383B /* libRCTVLCPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB47293924285A300096383B /* libRCTVLCPlayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "appdemo-tvOS";
+		};
+		CB47293824285A300096383B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB47293424285A2F0096383B /* RCTVLCPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CA30C441D07E0DB003B09F9;
+			remoteInfo = RCTVLCPlayer;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,17 +75,30 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = appdemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = appdemo/main.m; sourceTree = "<group>"; };
 		140CB384FCEEADC1BB62EA83 /* Pods-appdemo-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appdemo-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-appdemo-tvOSTests/Pods-appdemo-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		1D0E9EFF6F4FFAD2DB9431D2 /* libPods-appdemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appdemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2868E7B9EDEB8C1A6AC67190 /* Pods-appdemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appdemoTests.debug.xcconfig"; path = "Target Support Files/Pods-appdemoTests/Pods-appdemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* appdemo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "appdemo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* appdemo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "appdemo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF9F3A81ADBA59C8E98EB1F /* libPods-appdemo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appdemo-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		679EA616879255B3C3319164 /* Pods-appdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appdemo.debug.xcconfig"; path = "Target Support Files/Pods-appdemo/Pods-appdemo.debug.xcconfig"; sourceTree = "<group>"; };
 		819ECE138F3A82AEB25C256C /* Pods-appdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appdemo.release.xcconfig"; path = "Target Support Files/Pods-appdemo/Pods-appdemo.release.xcconfig"; sourceTree = "<group>"; };
+		943526B8D696A11CF98CF522 /* Pods_appdemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appdemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD11CFE4DDDA5E6173DD0CC /* libPods-appdemo-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appdemo-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB47293424285A2F0096383B /* RCTVLCPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVLCPlayer.xcodeproj; path = "../node_modules/react-native-yz-vlcplayer/ios/RCTVLCPlayer.xcodeproj"; sourceTree = "<group>"; };
+		CB47293A24285AD20096383B /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = ../vlcKit/MobileVLCKit.framework; sourceTree = "<group>"; };
+		CB47293C24285AFF0096383B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CB47293E24285B050096383B /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		CB47294024285B0A0096383B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CB47294224285B100096383B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CB47294424285B150096383B /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		CB47294624285B1C0096383B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CB47294824285B210096383B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CB47294A24285B2B0096383B /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		CB47294C24285B310096383B /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		CB47294E24285B370096383B /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		CB47295024285B3C0096383B /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		CDF28AE84F257527EBAEC77C /* Pods_appdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appdemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EEB8A5B2156C9934CCDD29A7 /* libPods-appdemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appdemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0572BD0087308E4E0EB7B7 /* Pods-appdemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appdemoTests.release.xcconfig"; path = "Target Support Files/Pods-appdemoTests/Pods-appdemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5672CEF3D2C62CF2943E0C2 /* libPods-appdemoTests.a in Frameworks */,
+				8E01CF59EB268F80930FC6EA /* Pods_appdemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +115,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F934AE0E80CD13E7AF1FCDD /* libPods-appdemo.a in Frameworks */,
+				CB47295124285B3C0096383B /* libbz2.1.0.tbd in Frameworks */,
+				CB47294F24285B370096383B /* libz.1.tbd in Frameworks */,
+				CB47294D24285B320096383B /* libc++.1.tbd in Frameworks */,
+				CB47294B24285B2B0096383B /* libiconv.2.tbd in Frameworks */,
+				CB47294924285B210096383B /* MediaPlayer.framework in Frameworks */,
+				CB47294724285B1C0096383B /* AVFoundation.framework in Frameworks */,
+				CB47294524285B150096383B /* CoreAudio.framework in Frameworks */,
+				CB47294324285B100096383B /* CoreVideo.framework in Frameworks */,
+				CB47295224285B7D0096383B /* libRCTVLCPlayer.a in Frameworks */,
+				CB47294124285B0A0096383B /* CoreMedia.framework in Frameworks */,
+				CB47293F24285B050096383B /* VideoToolbox.framework in Frameworks */,
+				CB47293D24285AFF0096383B /* AudioToolbox.framework in Frameworks */,
+				CB47293B24285AD20096383B /* MobileVLCKit.framework in Frameworks */,
+				C71F361767D37ECF2BE56CB4 /* Pods_appdemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,12 +185,24 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB47295024285B3C0096383B /* libbz2.1.0.tbd */,
+				CB47294E24285B370096383B /* libz.1.tbd */,
+				CB47294C24285B310096383B /* libc++.1.tbd */,
+				CB47294A24285B2B0096383B /* libiconv.2.tbd */,
+				CB47294824285B210096383B /* MediaPlayer.framework */,
+				CB47294624285B1C0096383B /* AVFoundation.framework */,
+				CB47294424285B150096383B /* CoreAudio.framework */,
+				CB47294224285B100096383B /* CoreVideo.framework */,
+				CB47294024285B0A0096383B /* CoreMedia.framework */,
+				CB47293E24285B050096383B /* VideoToolbox.framework */,
+				CB47293C24285AFF0096383B /* AudioToolbox.framework */,
+				CB47293A24285AD20096383B /* MobileVLCKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				1D0E9EFF6F4FFAD2DB9431D2 /* libPods-appdemo.a */,
 				4CF9F3A81ADBA59C8E98EB1F /* libPods-appdemo-tvOS.a */,
 				BFD11CFE4DDDA5E6173DD0CC /* libPods-appdemo-tvOSTests.a */,
-				EEB8A5B2156C9934CCDD29A7 /* libPods-appdemoTests.a */,
+				CDF28AE84F257527EBAEC77C /* Pods_appdemo.framework */,
+				943526B8D696A11CF98CF522 /* Pods_appdemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,13 +219,13 @@
 				2868E7B9EDEB8C1A6AC67190 /* Pods-appdemoTests.debug.xcconfig */,
 				FD0572BD0087308E4E0EB7B7 /* Pods-appdemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CB47293424285A2F0096383B /* RCTVLCPlayer.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -194,6 +252,14 @@
 				00E356EE1AD99517003FC87E /* appdemoTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* appdemo-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* appdemo-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB47293524285A2F0096383B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB47293924285A300096383B /* libRCTVLCPlayer.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +296,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				F88D0084EF812DA9C64A91F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,12 +375,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CB47293524285A2F0096383B /* Products */;
+					ProjectRef = CB47293424285A2F0096383B /* RCTVLCPlayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* appdemo */,
@@ -323,6 +397,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CB47293924285A300096383B /* libRCTVLCPlayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTVLCPlayer.a;
+			remoteRef = CB47293824285A300096383B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -473,6 +557,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F88D0084EF812DA9C64A91F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-appdemo/Pods-appdemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
+				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
+				"${BUILT_PRODUCTS_DIR}/React-CoreModules/CoreModules.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTActionSheet/RCTActionSheet.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTAnimation/RCTAnimation.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTBlob/RCTBlob.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTImage/RCTImage.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTLinking/RCTLinking.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTNetwork/RCTNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTSettings/RCTSettings.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTText/RCTText.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTVibration/RCTVibration.framework",
+				"${BUILT_PRODUCTS_DIR}/React-cxxreact/cxxreact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsi/jsi.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsiexecutor/jsireact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsinspector/jsinspector.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactCommon/ReactCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-yz-vlcplayer/react_native_yz_vlcplayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBReactNativeSpec.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreModules.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTActionSheet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTAnimation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTBlob.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTLinking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTSettings.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTVibration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cxxreact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsireact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsinspector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_yz_vlcplayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-appdemo/Pods-appdemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -628,7 +774,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../vlcKit";
 				INFOPLIST_FILE = appdemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -647,7 +797,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../vlcKit";
 				INFOPLIST_FILE = appdemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
