@@ -1,5 +1,87 @@
 # react-native-yz-vlcplayer
 
+## Installing
+
+## ADD A LINE IN package.json
+
+```
+"react-native-yz-vlcplayer": "https://github.com/joaodematejr/react-native-yz-vlcplayer.git"
+
+```
+
+## Linking Native Dependencies
+
+## React native version 60 and above
+
+If you are using react native version 0.60 or above you do not have to link this library.
+
+```
+cd ios && pod install && cd ..
+```
+
+step 1:
+
+   Run `cd ios && pod install && cd ..`
+
+step 2:
+
+   download  MobileVLCKit.framework from  [nightlies.videolan.org/build/iOS/](http://nightlies.videolan.org/build/iOS/)
+
+step 3:
+
+   create a folder named vlcKit, and copy MobileVLCKit.framework in this folder.
+
+   ![](./images/7.png)
+
+step 4:
+
+   In XCode, in the project navigator, right click Frameworks -> Add Files to [your project's name], go to `/vlckit` and add MobileVLCKit.framework
+
+
+   ![](./images/2.png)
+
+   ![](./images/3.png)
+
+step 5:
+
+   add framework search path:      `$(PROJECT_DIR)/../vlcKit`
+
+   ![](./images/1.png)
+
+
+step 6:
+
+   Select your project. Add the following libraries to your project's Build Phases -> Link Binary With Libraries:
+
+   * AudioToolbox.framework
+   * VideoToolbox.framework
+   * CoreMedia.framework
+   * CoreVideo.framework
+   * CoreAudio.framework
+   * AVFoundation.framework
+   * MediaPlayer.framework
+   * libstdc++.6.0.9.tbd
+   * libiconv.2.tbd
+   * libc++.1.tbd
+   * libz.1.tbd
+   * libbz2.1.0.tbd
+
+step 7:
+
+   set `Enable Bitcode`  to  `no`
+
+   Build Settings ---> search  Bitcode
+
+   ![](./images/4.png)
+
+
+step 8:
+
+  set project deployment target  `9.3`
+
+
+### Automatic Linking
+
 A `<VLCPlayer>` component for react-native
 此项目 参考[react-native-video](https://github.com/react-native-community/react-native-video)，
 [react-native-vlcplayer](https://github.com/xiongchuan86/react-native-vlcplayer),
@@ -12,7 +94,7 @@ VLCPlayer 支持各种格式(mp4,m3u8,flv,mov,rtsp,rtmp,etc.)，具体参看[vlc
 
 ## Example project
 
-   [https://github.com/xuyuanzhou/vlcplayerExample](https://github.com/xuyuanzhou/vlcplayerExample)
+   [https://github.com/joaodematejr/react-native-yz-vlcplayer/tree/master/demo](https://github.com/joaodematejr/react-native-yz-vlcplayer/tree/master/demo)
 
    ![](https://github.com/xuyuanzhou/resource/blob/master/gif/lizi.gif)
 
@@ -51,7 +133,7 @@ step 1:
 Run `react-native link react-native-yz-vlcplayer`
 
 
-## ios setup
+## ios setup 
 
 combined from  [react-native-vlcplayer](https://github.com/xiongchuan86/react-native-vlcplayer) 。
 
@@ -157,28 +239,28 @@ this.vlcPlayer.snapshot(path)  // path: string  存储的文件的路径。
 
     import { VLCPlayer } from 'react-native-yz-vlcplayer';
 
-   | props       | type     |  value  |   describe |
-   | --------    | :----:   |  :----:  |   :----:   |
-   | paused      | bool     |         |            |
-   | muted       | bool     |         |            |
-   | volume      | bool     | 0---200 |            |
-   | hwDecoderEnabled | number  | 0  or  1 |   (Only android)  need  use with hwDecoderForced |
-   | hwDecoderForced  | number  | 0  or  1 |   (Only android)  need  use with hwDecoderEnabled|
-   | initType    | number   |         |            |
-   | initOptions | array    |         |            |
-   | mediaOptions| object   |         |            |
-   | source      | object   | { uri: 'http:...' }| |
-   | autoplay    | bool     |       |  是否自动播放（默认false）        |
-   | onLoadStart | func     |       |  vlc视频容器初始化完毕  |
-   | onOpen      | func     |       |  视频被打开            |
-   | onBuffering | func     |       |  正在缓冲中           |
-   | onProgress  | func     | { currentTime:1000,duration:1000 }  unit：ms    |  视频进度发生改变     |
-   | onEnd       | func     |       |  视频播放结束        |
-   | onPlaying   | func     |       |  视频正在播放        |
-   | onPaused    | func     |       |  视频暂停           |
-   | onError     | func     |       |  播放视频出错       |
-   | onStopped   | func     |       |  视频停止播放(直播视频请根据这个判断) |
-   | onIsPlaying | func     | {isPlaying:true}   |  视频是否正在播放       |
+   | props            |  type  |                    value                     |                    describe                     |
+   | ---------------- | :----: | :------------------------------------------: | :---------------------------------------------: |
+   | paused           |  bool  |                                              |                                                 |
+   | muted            |  bool  |                                              |                                                 |
+   | volume           |  bool  |                   0---200                    |                                                 |
+   | hwDecoderEnabled | number |                   0  or  1                   | (Only android)  need  use with hwDecoderForced  |
+   | hwDecoderForced  | number |                   0  or  1                   | (Only android)  need  use with hwDecoderEnabled |
+   | initType         | number |                                              |                                                 |
+   | initOptions      | array  |                                              |                                                 |
+   | mediaOptions     | object |                                              |                                                 |
+   | source           | object |             { uri: 'http:...' }              |                                                 |
+   | autoplay         |  bool  |                                              |            是否自动播放（默认false）            |
+   | onLoadStart      |  func  |                                              |              vlc视频容器初始化完毕              |
+   | onOpen           |  func  |                                              |                   视频被打开                    |
+   | onBuffering      |  func  |                                              |                   正在缓冲中                    |
+   | onProgress       |  func  | { currentTime:1000,duration:1000 }  unit：ms |                视频进度发生改变                 |
+   | onEnd            |  func  |                                              |                  视频播放结束                   |
+   | onPlaying        |  func  |                                              |                  视频正在播放                   |
+   | onPaused         |  func  |                                              |                    视频暂停                     |
+   | onError          |  func  |                                              |                  播放视频出错                   |
+   | onStopped        |  func  |                                              |      视频停止播放(直播视频请根据这个判断)       |
+   | onIsPlaying      |  func  |               {isPlaying:true}               |                视频是否正在播放                 |
 
 
    ```
