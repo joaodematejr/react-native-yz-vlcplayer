@@ -19,6 +19,18 @@
 		80D8FEBD5CE2DE9625B791D2 /* libPods-demo-demoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB7937F08B0AA9BD8864E66 /* libPods-demo-demoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B9EA1B4F6C6C91D5DF1A7F9E /* libPods-demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F10031DC62A943354DD5DA7 /* libPods-demo.a */; };
+		CBE8939424CFDDBD0016DDAA /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE8939324CFDDBD0016DDAA /* MobileVLCKit.framework */; };
+		CBE8939624CFDE0D0016DDAA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE8939524CFDE0D0016DDAA /* AudioToolbox.framework */; };
+		CBE8939824CFDE150016DDAA /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE8939724CFDE150016DDAA /* VideoToolbox.framework */; };
+		CBE8939A24CFDE2A0016DDAA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE8939924CFDE2A0016DDAA /* CoreMedia.framework */; };
+		CBE8939C24CFDE300016DDAA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE8939B24CFDE300016DDAA /* CoreVideo.framework */; };
+		CBE8939E24CFDE380016DDAA /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE8939D24CFDE380016DDAA /* CoreAudio.framework */; };
+		CBE893A024CFDE3E0016DDAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE8939F24CFDE3E0016DDAA /* AVFoundation.framework */; };
+		CBE893A224CFDE480016DDAA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE893A124CFDE480016DDAA /* MediaPlayer.framework */; };
+		CBE893A424CFDE550016DDAA /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE893A324CFDE550016DDAA /* libiconv.2.tbd */; };
+		CBE893A624CFDE5D0016DDAA /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE893A524CFDE5D0016DDAA /* libc++.1.tbd */; };
+		CBE893A824CFDE630016DDAA /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE893A724CFDE630016DDAA /* libz.1.tbd */; };
+		CBE893AA24CFDE6A0016DDAA /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE893A924CFDE6A0016DDAA /* libbz2.1.0.tbd */; };
 		FA3A4AFD68F66F914B94325A /* libPods-demo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BE911518459B2DA566D7DC /* libPods-demo-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +77,18 @@
 		B9371F2986D4E152DF69858A /* Pods-demo-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo-demoTests.release.xcconfig"; path = "Target Support Files/Pods-demo-demoTests/Pods-demo-demoTests.release.xcconfig"; sourceTree = "<group>"; };
 		BECB125EB30B19368254C1BE /* libPods-demo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demo-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB7937F08B0AA9BD8864E66 /* libPods-demo-demoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demo-demoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE8939324CFDDBD0016DDAA /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = ../vlcKit/MobileVLCKit.framework; sourceTree = "<group>"; };
+		CBE8939524CFDE0D0016DDAA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CBE8939724CFDE150016DDAA /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		CBE8939924CFDE2A0016DDAA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CBE8939B24CFDE300016DDAA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CBE8939D24CFDE380016DDAA /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		CBE8939F24CFDE3E0016DDAA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CBE893A124CFDE480016DDAA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CBE893A324CFDE550016DDAA /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		CBE893A524CFDE5D0016DDAA /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		CBE893A724CFDE630016DDAA /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		CBE893A924CFDE6A0016DDAA /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -82,7 +106,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE893AA24CFDE6A0016DDAA /* libbz2.1.0.tbd in Frameworks */,
+				CBE893A824CFDE630016DDAA /* libz.1.tbd in Frameworks */,
+				CBE893A624CFDE5D0016DDAA /* libc++.1.tbd in Frameworks */,
+				CBE893A424CFDE550016DDAA /* libiconv.2.tbd in Frameworks */,
+				CBE893A224CFDE480016DDAA /* MediaPlayer.framework in Frameworks */,
+				CBE893A024CFDE3E0016DDAA /* AVFoundation.framework in Frameworks */,
+				CBE8939E24CFDE380016DDAA /* CoreAudio.framework in Frameworks */,
+				CBE8939C24CFDE300016DDAA /* CoreVideo.framework in Frameworks */,
+				CBE8939A24CFDE2A0016DDAA /* CoreMedia.framework in Frameworks */,
+				CBE8939824CFDE150016DDAA /* VideoToolbox.framework in Frameworks */,
+				CBE8939624CFDE0D0016DDAA /* AudioToolbox.framework in Frameworks */,
 				B9EA1B4F6C6C91D5DF1A7F9E /* libPods-demo.a in Frameworks */,
+				CBE8939424CFDDBD0016DDAA /* MobileVLCKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +175,18 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBE893A924CFDE6A0016DDAA /* libbz2.1.0.tbd */,
+				CBE893A724CFDE630016DDAA /* libz.1.tbd */,
+				CBE893A524CFDE5D0016DDAA /* libc++.1.tbd */,
+				CBE893A324CFDE550016DDAA /* libiconv.2.tbd */,
+				CBE893A124CFDE480016DDAA /* MediaPlayer.framework */,
+				CBE8939F24CFDE3E0016DDAA /* AVFoundation.framework */,
+				CBE8939D24CFDE380016DDAA /* CoreAudio.framework */,
+				CBE8939B24CFDE300016DDAA /* CoreVideo.framework */,
+				CBE8939924CFDE2A0016DDAA /* CoreMedia.framework */,
+				CBE8939724CFDE150016DDAA /* VideoToolbox.framework */,
+				CBE8939524CFDE0D0016DDAA /* AudioToolbox.framework */,
+				CBE8939324CFDDBD0016DDAA /* MobileVLCKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				9F10031DC62A943354DD5DA7 /* libPods-demo.a */,
@@ -194,7 +242,6 @@
 				303CFD2952FB7927D4EAC682 /* Pods-demo-tvOSTests.debug.xcconfig */,
 				612EEF9DB800DEC3043FDA51 /* Pods-demo-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -384,10 +431,42 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-demo-demoTests/Pods-demo-demoTests-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,10 +495,42 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-demo/Pods-demo-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,6 +768,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../vlcKit";
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -679,6 +791,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../vlcKit";
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
