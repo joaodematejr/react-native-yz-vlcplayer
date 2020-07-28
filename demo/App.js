@@ -62,7 +62,6 @@ export default function App() {
           onStartFullScreen={isOnStartFullScreen}
           onCloseFullScreen={isOnCloseFullScreen}
         />
-
         <Text style={{ marginTop: 20 }}>RTSP</Text>
         <VlcSimplePlayer
           style={{ width: '100%' }}
