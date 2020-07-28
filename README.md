@@ -1,4 +1,4 @@
-# react-native-yz-vlcplayer (Not yet available for ios)
+# react-native-yz-vlcplayer 
 
 ## Installing
 
